@@ -21,7 +21,7 @@ class ContactFormType extends AbstractType
     {
         $builder
             ->add('name', TextType::class, [
-                'label' => 'Név:',
+                'label' => 'Neved:',
                 'constraints' => [
                     new notBlank([
                         'message' => 'Kérjük töltse ki a mezőt.'
@@ -34,10 +34,10 @@ class ContactFormType extends AbstractType
                 'required' => false,
             ])
             ->add('email', EmailType::class, [
-                'label' => 'E-mail',
+                'label' => 'E-mail címed',
             ])
             ->add('message', TextareaType::class, [
-                'label' => 'Üzenet:',
+                'label' => 'Üzenet szövege:',
                 // 'attr' => array('style' => 'width: 200px; height: 200px'),
                 'constraints' => [
                     new notBlank([
