@@ -23,9 +23,5 @@ npm run build
 
 symfony server:start
 
-# Run 'npm run watch' in another terminal in the project folder.
-
-npm run watch
-
 
 ```
